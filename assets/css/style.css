@@ -1,0 +1,678 @@
+
+*{
+    
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#header{
+    width:100%;
+    height:650px;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("../img/natureBackground.jpg") center/cover no-repeat;
+    color:#fff;
+    position:relative;
+}
+
+
+#nav{
+    width:100%;
+    padding:18px 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+}
+
+
+#logo{
+    font-size:26px;
+    font-weight:700;
+    color:#ffffff;
+    letter-spacing:1px;
+}
+#logo span{
+ color: #00c2ff;
+}
+
+#meni ul{
+    list-style:none;
+    display:flex;
+    gap:28px;
+}
+
+#meni ul li a{
+    text-decoration:none;
+    color:#f1f1f1;
+    font-size:15px;
+    font-weight:500;
+    position:relative;
+    padding:6px 0;
+    transition:0.3s;
+}
+
+
+#meni ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    width:0;
+    height:2px;
+    background:#8a8102;
+    transition:0.3s;
+}
+
+#meni ul li a:hover{
+    color:#ffffff;
+}
+
+#meni ul li a:hover::after{
+    width:100%;
+}
+
+
+#prijavaBtn{
+    border:1px solid #ffffff;
+    padding:8px 16px;
+    border-radius:20px;
+    font-size:14px;
+    cursor:pointer;
+    transition:0.3s;
+    background: transparent;
+    color:#fff;
+}
+
+#prijavaBtn:hover{
+    background:#f1f1f1;
+    color:#000;
+}
+
+
+
+
+#firstTitle{
+    width:900px;
+    max-width:90%;
+    margin:40px auto 0 auto;
+    text-align:center;
+}
+
+#firstTitle h1{
+    font-size:36px;
+    line-height:1.3;
+    font-weight:700;
+}
+
+
+#reservation{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.searchWrap{
+    width:1050px;
+    max-width:95%;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(6px);
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    padding:16px;
+}
+
+
+
+
+
+.tab{
+    width: 100px;
+    background:transparent;
+    border:none;
+    color:#cfd6df;
+    font-weight:600;
+    font-size:15px;
+    padding:6px 10px;
+    border-bottom:2px solid transparent;
+    transition:0.25s;
+    text-align: center;
+    color:#00c2ff;
+    border-bottom:2px solid #00c2ff;
+    padding:12px;
+    margin:0px auto 10px auto;
+    
+}
+
+.panel{
+    background:#ffffff;
+    padding:18px;
+    border-radius:0 0 8px 8px;
+}
+
+.tripType{
+    display:flex;
+    gap:30px;
+    margin-bottom:15px;
+    font-size:14px;
+    color:#333;
+}
+
+.formGrid{
+    display:grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr 1fr 0.7fr 140px;
+    gap:12px;
+}
+
+
+.field{
+    display:flex;
+    flex-direction:column;
+    font-size:13px;
+    color:#444;
+}
+
+.field input,
+.field select{
+    margin-top:5px;
+    padding:11px;
+    border-radius:6px;
+    border:1px solid #cfd6df;
+    font-size:14px;
+    outline:none;
+    transition:0.2s;
+}
+
+.field input:focus,
+.field select:focus{
+    border-color:#00c2ff;
+    box-shadow:0 0 0 2px rgba(0,194,255,0.15);
+}
+
+
+
+.searchBtn{
+    align-self:end;
+    height:42px;
+    border:none;
+    border-radius:6px;
+    background:#ff0066;
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.25s;
+}
+
+.searchBtn:hover{
+    transform:translateY(-1px);
+    background:#e0005a;
+}
+#info{
+   
+    box-shadow: 0 2px 4px 2px rgba(109, 105, 105, 0.5);
+}
+.info-bar {
+    width: 80%;
+    margin: 0px auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+}
+
+.info-icon {
+    font-size: 36px;
+    color: #333;
+    min-width: 40px; 
+}
+
+.info-text h4 {
+    font-size: 16px;
+    font-weight:600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.info-text p {
+    font-size: 13px;
+    color: #0b4dbb;
+}
+
+.last-minute {
+    width: 1200px;
+    margin: 80px auto;
+    
+}
+
+.last-minute h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+#najboljePonudeNaslov{
+    margin:50px 350px;
+}
+#najboljePonudeNaslov h2{
+    font-size: 32px;
+}
+#kontaktNaslov{
+    margin:50px 350px;
+}
+#kontaktNaslov h2{
+    font-size: 32px;
+}
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+
+.card.large {
+    grid-column: span 2;
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.card.large img {
+    height: 300px;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: orange;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.overlay-text h3 {
+    margin: 0;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.card p {
+    color: #666;
+    margin: 0;
+}
+ .large p{
+    color:#fff;
+
+}
+
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+    color: white;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
+.slider-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.country {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.destination p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.destination h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.price span {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.price h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.price small {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+
+
+
+
+.prijava {
+    margin:50px auto;
+    background: #f3f4f6;
+    width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+.prijava h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.prijava p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+.registracija {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.registracija input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.registracija input:focus {
+    border-color: #2563eb;
+}
+
+
+.registracija .toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+.forgot {
+    display: block;
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+.chbPrijava {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #374151;
+}
+
+.chbPrijava input {
+    margin-top: 3px;
+}
+
+.chbPrijava small {
+    display: block;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 30px;
+    border: none;
+    background: #1d72d8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #155bb5;
+}
+
+
+
+#poruka {
+    margin-top: 10px;
+    font-weight: 400;
+    grid-column: 1 / -1; 
+
+}
+   
+
+.uspeh {
+    color: green;
+}
+
+.greska {
+    color: red;
+}
+#footer{
+    background:#0f172a;
+    color:#ffffff;
+    margin-top:80px;
+}
+
+.footer-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:40px;
+    padding:60px 0;
+}
+
+.footer-col h3{
+    font-size:22px;
+    margin-bottom:15px;
+}
+.footer-col span{
+   color:#00c2ff;
+}
+.footer-col h4{
+    margin-bottom:15px;
+    font-size:16px;
+    color:#00c2ff;
+}
+
+.footer-col p{
+    font-size:14px;
+    line-height:1.6;
+    color:#cbd5e1;
+}
+
+.footer-col ul{
+    list-style:none;
+}
+
+.footer-col ul li{
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    text-decoration:none;
+    color:#cbd5e1;
+    transition:0.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#00c2ff;
+}
+
+.social a{
+    display:inline-block;
+    margin-right:12px;
+    font-size:18px;
+    color:#ffffff;
+    transition:0.3s;
+}
+
+.social a:hover{
+    color:#00c2ff;
+}
+
+.footer-bottom{
+    text-align:center;
+    padding:15px;
+    background:#0b1220;
+    font-size:13px;
+    color:#94a3b8;
+}
+#autorNaslov {
+    margin: 50px 350px;
+}
+
+#autorNaslov h2 {
+    font-size: 32px;
+}
+
+#autorSekcija {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.autor-card {
+    width: 900px;
+    max-width: 95%;
+    background: #f3f4f6;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.autor-slika img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.autor-tekst {
+    flex: 1;
+}
+
+.autor-tekst h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.autor-tekst p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.dugacak-tekst {
+    display: none;
+    margin-top: 10px;
+}
+
+#toggleAutor {
+    width: 300px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #1d72d8;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+#toggleAutor:hover {
+    background: #155bb5;
+}
+#hamburger{
+    display:none;
+}
+.carousel-arrow{
+    display: none;
+}

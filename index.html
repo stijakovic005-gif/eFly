@@ -1,0 +1,284 @@
+<!Doctype html>
+<html>
+<head>
+<title>eFly</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta name="description" content= "eFly je moderna platforma za rezervaciju avio karata koja nudi najpovoljnije letove,
+ last minute ponude i najbolje destinacije širom sveta. Brza pretraga, jednostavna rezervacija i sigurno putovanje  sve na jednom mestu.">
+   <meta name="keywords" content="avio karte,jeftine avio karte,last minute ponude,jeftini letovi,rezervacija letova,
+   online kupovina karata,letovi iz Beograda,letovi iz Niša,vikend putovanja,city break,letovanje 2026,putovanja Evropa,
+   avio kompanije,turističke destinacije,Dubai putovanje,Rim putovanje,Atina putovanje,Lisabon putovanje,Barselona putovanje,Malta putovanje">
+    <meta name="author" content="Stefan Stijaković">
+        <link rel="shortcut icon" type="image/ico" href="assets/img/logo.ico" />
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/45432199c6.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="assets/css/style.css"  type="text/css">
+        <link rel="stylesheet" href="assets/css/responsive.css"  type="text/css">
+
+</head>
+<body>
+   
+    <div id="header">
+        <div id="nav">
+            <div id="logo"><span>e</span>Fly</div>
+            <div  id="hamburger">
+             <i class="fa-solid fa-bars"></i>
+    </div>
+            <div id="meni">
+            
+            </div>
+        <div id="logIn"><input type="button" id="prijavaBtn" name="prijavaBtn" value="Prijavite se"  /></div>
+
+        </div>
+        <div id="firstTitle"><h1>Jeftine avio karte, last minut ponude, letovanje...
+                                Putovanje na tvoj način! Rezerviši odmah.</h1></div>
+        <div id="reservation">
+            
+        <div class="searchWrap">
+
+ 
+    
+        <div class="tab"><i class="fa-solid fa-plane"></i>&nbsp; Letovi</div>
+   
+
+ 
+    <div class="panel">
+        <form id="formaPretraga">
+        <div class="tripType">
+            <label><input id="povratno" type="radio" name="tip" checked="checked"> Povratno</label>
+            <label><input id="jedanSmer" type="radio" name="tip"> Jedan smer</label>
+        </div>
+
+        <div class="formGrid">
+            <div id="polazakAer" class="field">
+                
+        
+            </div>
+
+            <div  id="destinacijaAer" class="field">
+               
+               
+            </div>
+
+            <div class="field">
+                <label>Polazak</label>
+                <input type="date" name="datumPolaska" id="datumPolaska">
+            </div>
+
+            <div class="field" id="povratakField">
+                <label>Povratak</label>
+                <input type="date" name="datumPovratka" id="datumPovratka">
+            </div>
+
+            <div id="ddlPutnici" class="field">
+                
+            </div>
+
+            <button type="submit" class="searchBtn" >Pretraži</button>
+            <div id="poruka"></div>
+        </div>
+        </form>
+    </div>
+
+</div>
+
+</div>
+</div>
+    </div>
+    <div id="info">
+        <div class="info-bar">
+
+    <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-earth-americas"></i></div>
+        <div class="info-text">
+           
+            <h4>VIKEND PUTOVANJE</h4>
+            <p>City break po odličnoj ceni</p>
+        </div>
+    </div>
+
+    <div class="info-item">
+        <div class="info-icon"> <i class="fa-solid fa-umbrella-beach"></i></div>
+        <div class="info-text">
+           
+            <h4>BEZBEDNO LETOVANJE</h4>
+            <p>Slobodno vreme na dohvat ruke</p>
+        </div>
+    </div>
+
+    <div class="info-item">
+        <div class="info-icon"> <i class="fa-regular fa-user"></i></div>
+        <div class="info-text">
+            
+            <h4>UPRAVLJANJE REZERVACIJAMA</h4>
+            <p>Ulogujte se na  svoj eFly nalog</p>
+        </div>
+    </div>
+
+    <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div class="info-text">
+            
+            <h4>NAJBOLJA MOBILNA APLIKACIJA</h4>
+            <p>Preuzmi i iskoristi ponude</p>
+        </div>
+    </div>
+
+</div>
+
+    </div>
+
+<section class="last-minute" id="lastMinute">
+    <h2>Poslednji trenutak</h2>
+    <p class="subtitle">
+        Najbolje vreme za odlazak na odmor? Baš sada! Iskoristite naše last minute ponude.
+    </p>
+    <div class="carousel-arrow left" id="prevCard"><i class="fa-solid fa-arrow-left"></i></div>
+    <div class="carousel-arrow right" id="nextCard"><i class="fa-solid fa-arrow-right"></i></div>
+    <div class="cards" id="cardsContainer">
+   
+        
+
+    </div>
+</section>
+
+
+
+
+
+ <div id="najboljePonudeNaslov" ><h2>Najbolje ponude</h2></div>
+ <section class="slider" id="slider">
+
+    <div class="overlay"></div>
+
+    <div class="slider-content">
+        <p class="country" id="sliderCountry"></p>
+
+        <div class="destination">
+            <p id="sliderFrom"></p>
+            <h1 id="sliderCity"></h1>
+        </div>
+
+        <div class="price">
+            <span>Za samo</span>
+            <h2 id="sliderPrice"></h2>
+        </div>
+    </div>
+</section>
+
+
+    <div id="kontaktNaslov" ><h2>Kontakt</h2></div>
+    <div class="prijava">
+    <form id="kontaktForma">
+    <h2>Prijavi se na svoj nalog</h2>
+    <p>Ovo je opcija za korisnike koji su prijavljeni prilikom rezervacije.</p>
+
+    <div class="registracija">
+        <input type="text" id="ime" name="ime" placeholder="Ime">
+    </div>
+
+    <div class="registracija">
+        <input type="text"   id="prezime" name="prezime" placeholder="Prezime">
+    </div>
+
+    <div class="registracija">
+        <input type="email" id="email" name="email" placeholder="E-mail">
+    </div>
+
+    <div class="registracija">
+        <input type="password" id="password" name="password" placeholder="Lozinka" >
+        <span class="toggle-password" onclick="togglePassword()"><i class="fa-solid fa-eye"></i></span>
+    </div>
+
+    <a href="#" class="forgot">Zaboravio sam lozinku</a>
+
+    <div class="chbPrijava">
+        <input type="checkbox" id="newsletter" name="newsletter"required>
+        <div>
+            Više putovanja po odličnim cenama u biltenu.
+            <small>Slažem se s primanjem marketinških informacija od eSky.rs</small>
+        </div>
+    </div>
+
+    <button>Prijavite se</button>
+    <div id="kontaktPoruka"></div>
+    </form>
+    
+</div>
+<div id="autorNaslov"><h2>Autor</h2></div>
+
+<section id="autorSekcija">
+    <div class="autor-card">
+
+        <div class="autor-slika">
+            <img src="assets/img/slikaautora.png" alt="slika utora">
+        </div>
+
+        <div class="autor-tekst">
+            <h3>Stefan Stijaković</h3>
+
+            <p class="kratak-tekst">
+               Pozdrav svima ovo je moj sajt iz web programiranja..
+            </p>
+
+            <p class="dugacak-tekst">
+                Zovem se Stefan, rođen sam 2005. godine, živim u Obrenovcu gde sam i završio Tehničku školu, 
+                smer procesno upravljanje. Sada studiram Visoku ICT školu, IT smer. 
+                Volim sport i trening je moja svakodnevnica. Odlucio sam da upisem ovaj fakultet da bih proširio svoje znanje o IT svetu.
+            </p>
+
+            <button id="toggleAutor">Prikaži više</button>
+        </div>
+
+    </div>
+</section>
+<footer id="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3><span>e</span>Fly</h3>
+            <p>Jeftine avio karte, last minute ponude i najbolje destinacije na jednom mestu.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Brzi linkovi</h4>
+            <ul>
+                <li><a href="#firstTitle">Avio karte</a></li>
+                <li><a href="#lastMinute">Poslednji trenutak</a></li>
+                <li><a href="#najboljePonudeNaslov">Najbolje ponude</a></li>
+                <li><a href="#kontaktNaslov">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Kontakt</h4>
+            <p><i class="fa-solid fa-envelope"></i> stefan.stijakovic.124.24@ict.edu.rs</p>
+            <p><i class="fa-solid fa-phone"></i> +381(11) 3290 828</p>
+            <p><i class="fa-solid fa-location-dot"></i>Zdravka Čelara 16, 11000 Beograd, Srbija</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Pratite nas</h4>
+            <div class="social">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 eFly | Designed by Stefan Stijaković.</p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+
+
+</html>
+
