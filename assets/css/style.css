@@ -489,7 +489,7 @@
     margin-top: 3px;
 }
 
-.chbPrijava small {
+.chbPrijava span {
     display: block;
     color: #6b7280;
     font-size: 13px;
@@ -675,4 +675,5 @@ button:hover {
 }
 .carousel-arrow{
     display: none;
+
 }
