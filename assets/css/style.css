@@ -488,14 +488,11 @@
 .chbPrijava input {
     margin-top: 3px;
 }
-
 .chbPrijava span {
     display: block;
     color: #6b7280;
     font-size: 13px;
 }
-
-
 button {
     width: 100%;
     padding: 16px;
@@ -677,4 +674,5 @@ button:hover {
     display: none;
 
 }
+
 
